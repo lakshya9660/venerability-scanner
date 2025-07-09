@@ -1,0 +1,328 @@
+{
+  "target": "https://student.bennetterp.camu.in/v2/?id=663474b11dd0e9412a1f793f",
+  "scan_time": "2025-05-17T02:41:31.096244",
+  "vulnerabilities": [
+    {
+      "name": "AI Security Agent Detection",
+      "description": "No AI security agents detected",
+      "severity": "INFO",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:41:31.100357",
+      "risk_score": 0
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:23.523826",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:23.524056",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing HSTS header (Strict-Transport-Security) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:24.634803",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing clickjacking protection (X-Frame-Options) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:24.635037",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing MIME-type protection (X-Content-Type-Options) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:24.635218",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing XSS protection header (X-XSS-Protection) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:24.635388",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing CSP header (Content-Security-Policy) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:24.635519",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:24.919758",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:24.920008",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:25.976955",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:25.977198",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:27.158319",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:27.158572",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:28.458950",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:28.459294",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:29.323077",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:29.323209",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing HSTS header (Strict-Transport-Security) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:31.914167",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing clickjacking protection (X-Frame-Options) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:31.914339",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing MIME-type protection (X-Content-Type-Options) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:31.914435",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing XSS protection header (X-XSS-Protection) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:31.914569",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing CSP header (Content-Security-Policy) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:31.914648",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:32.178993",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:32.179118",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:33.135136",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:33.135293",
+      "risk_score": 80
+    },
+    {
+      "name": "Directory Traversal",
+      "description": "Directory traversal vulnerability found at https://student.bennetterp.camu.in/v2/assets/myCamu-ChatBot-widget/index.umd.js",
+      "severity": "HIGH",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:42:33.872858",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:34.507761",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:34.507913",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Monitoring",
+      "description": "No security monitoring system detected",
+      "severity": "HIGH",
+      "evidence": "No standard monitoring configurations found",
+      "remediation": "Implement a security monitoring solution (SIEM, IDS/IPS)",
+      "timestamp": "2025-05-17T02:42:35.602531",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Alert Mechanism",
+      "description": "No security alert system detected",
+      "severity": "HIGH",
+      "evidence": "No alert configuration files found",
+      "remediation": "Implement security alert mechanisms for critical events",
+      "timestamp": "2025-05-17T02:42:35.602650",
+      "risk_score": 80
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 21,
+    "medium": 0,
+    "low": 10,
+    "info": 0,
+    "ai_agents_detected": false,
+    "ai_bypass_attempted": false,
+    "ai_bypass_result": null
+  },
+  "risk_score": 65.0,
+  "scan_details": {
+    "paths_discovered": [
+      "/",
+      "app/combined.min.js",
+      "/app/app.min.js",
+      "assets/vendornew.min.css",
+      "assets/vendor.min.js",
+      "assets/css/custom.css",
+      "assets/manifest.json",
+      "assets/js/xss-filters.min.js",
+      "assets/myCamu-ChatBot-widget/index.umd.js",
+      "/assets"
+    ],
+    "parameters_discovered": [],
+    "authentication_status": "Not attempted",
+    "scan_duration": "0:01:04.503711",
+    "total_requests": 305,
+    "successful_requests": 145,
+    "failed_requests": 160,
+    "scan_status": "Completed",
+    "scan_depth": "enhanced",
+    "last_update": "2025-05-17T02:42:35.602655"
+  }
+}

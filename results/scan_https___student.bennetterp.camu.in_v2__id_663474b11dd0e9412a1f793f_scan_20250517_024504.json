@@ -1,0 +1,38 @@
+{
+  "target": "https://student.bennetterp.camu.in/v2/?id=663474b11dd0e9412a1f793f",
+  "scan_time": "2025-05-17T02:45:04.307559",
+  "vulnerabilities": [
+    {
+      "name": "AI Security Agent Detection",
+      "description": "No AI security agents detected",
+      "severity": "INFO",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-05-17T02:45:04.312181",
+      "risk_score": 0
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "info": 0,
+    "ai_agents_detected": false,
+    "ai_bypass_attempted": false,
+    "ai_bypass_result": null
+  },
+  "risk_score": 0,
+  "scan_details": {
+    "paths_discovered": [],
+    "parameters_discovered": [],
+    "authentication_status": "Not attempted",
+    "scan_duration": "0:00:13.896787",
+    "total_requests": 0,
+    "successful_requests": 0,
+    "failed_requests": 0,
+    "scan_status": "Stopped",
+    "scan_depth": "enhanced",
+    "last_update": "2025-05-17T02:45:18.208604"
+  }
+}

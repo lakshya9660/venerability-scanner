@@ -1,0 +1,136 @@
+{
+  "target": "https://student.bennetterp.camu.in/v2/",
+  "scan_time": "2025-04-20T16:47:00.156612",
+  "vulnerabilities": [
+    {
+      "name": "Directory Traversal",
+      "description": "Directory traversal vulnerability found at https://student.bennetterp.camu.in/v2/assets/myCamu-ChatBot-widget/index.umd.js",
+      "severity": "HIGH",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:36.279356",
+      "risk_score": 80
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing HSTS header (Strict-Transport-Security) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:39.364270",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing clickjacking protection (X-Frame-Options) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:39.364442",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing MIME-type protection (X-Content-Type-Options) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:39.364584",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing XSS protection header (X-XSS-Protection) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:39.364716",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing CSP header (Content-Security-Policy) at https://student.bennetterp.camu.in/app/app.min.js",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:39.364808",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing HSTS header (Strict-Transport-Security) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:43.221412",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing clickjacking protection (X-Frame-Options) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:43.221619",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing MIME-type protection (X-Content-Type-Options) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:43.221917",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing XSS protection header (X-XSS-Protection) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:43.222068",
+      "risk_score": 40
+    },
+    {
+      "name": "Missing Security Header",
+      "description": "Missing CSP header (Content-Security-Policy) at https://student.bennetterp.camu.in/assets",
+      "severity": "LOW",
+      "evidence": null,
+      "remediation": null,
+      "timestamp": "2025-04-20T16:47:43.222183",
+      "risk_score": 40
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 10,
+    "info": 0
+  },
+  "risk_score": 43.63636363636363,
+  "scan_details": {
+    "paths_discovered": [
+      "/",
+      "assets/vendor.min.js",
+      "assets/vendornew.min.css",
+      "assets/myCamu-ChatBot-widget/index.umd.js",
+      "app/combined.min.js",
+      "assets/css/custom.css",
+      "assets/manifest.json",
+      "/app/app.min.js",
+      "assets/js/xss-filters.min.js",
+      "/assets"
+    ],
+    "parameters_discovered": [],
+    "authentication_status": "Not attempted",
+    "scan_duration": "0:00:44.095409",
+    "total_requests": 255,
+    "successful_requests": 145,
+    "failed_requests": 110,
+    "scan_status": "Completed",
+    "scan_depth": "enhanced",
+    "last_update": "2025-04-20T16:47:43.222193"
+  }
+}

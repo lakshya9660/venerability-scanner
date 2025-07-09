@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VULNERABILITY SCANNER</h1>
+            <div class="pulse-line"></div>
+        </header>
+
+        <main>
+            <div class="scan-form">
+                <div class="form-group">
+                    <label for="target">Target URL/IP</label>
+                    <input type="text" id="target" placeholder="Enter target URL or IP address" class="neon-input">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username (Optional)</label>
+                    <input type="text" id="username" placeholder="Enter username" class="neon-input">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (Optional)</label>
+                    <input type="password" id="password" placeholder="Enter password" class="neon-input">
+                </div>
+                <button id="startScan" class="neon-button">START SCAN</button>
+                <button id="stopScan" class="neon-button danger" style="display: none;">STOP SCAN</button>
+            </div>
+
+            <div class="results-container" style="display: none;">
+                <div class="status-panel">
+                    <div class="status-header">
+                        <h2>SCAN STATUS</h2>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Initializing...</span>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="scan-stats">
+                            <div class="stat">
+                                <span class="label">Total Requests:</span>
+                                <span class="value" id="totalRequests">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Success:</span>
+                                <span class="value" id="successRequests">0</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Failed:</span>
+                                <span class="value" id="failedRequests">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vulnerabilities-panel">
+                    <h2>VULNERABILITIES</h2>
+                    <div class="vulnerability-summary">
+                        <div class="vuln-stat critical">
+                            <span class="count">0</span>
+                            <span class="label">Critical</span>
+                        </div>
+                        <div class="vuln-stat high">
+                            <span class="count">0</span>
+                            <span class="label">High</span>
+                        </div>
+                        <div class="vuln-stat medium">
+                            <span class="count">0</span>
+                            <span class="label">Medium</span>
+                        </div>
+                        <div class="vuln-stat low">
+                            <span class="count">0</span>
+                            <span class="label">Low</span>
+                        </div>
+                    </div>
+                    <div class="vulnerability-list"></div>
+                </div>
+
+                <div class="scan-details">
+                    <h2>SCAN DETAILS</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">Target:</span>
+                            <span class="value" id="targetDetail"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Start Time:</span>
+                            <span class="value" id="startTime"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Duration:</span>
+                            <span class="value" id="duration">00:00:00</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Status:</span>
+                            <span class="value" id="scanStatus">Not Started</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="downloadReport" class="neon-button">DOWNLOAD REPORT</button>
+                    <button id="newScan" class="neon-button">NEW SCAN</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Advanced Vulnerability Scanner &copy; 2024</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Add this to your results section -->
+    <div class="card mb-4" id="aiAgentResults" style="display: none;">
+        <div class="card-header">
+            <h5 class="mb-0">AI Security Agent Detection</h5>
+        </div>
+        <div class="card-body">
+            <div id="aiAgentContent">
+                <p>Checking for AI-based security systems...</p>
+            </div>
+            <div id="aiBypassContent" style="display: none;">
+                <h6>Bypass Attempt Results:</h6>
+                <p id="aiBypassResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this JavaScript to update the UI -->
+    <script>
+    // Add this to your existing JavaScript that processes scan results
+    function updateScanResults(data) {
+        // ... existing code ...
+        
+        // Update AI agent detection results
+        if (data.summary && 'ai_agents_detected' in data.summary) {
+            $('#aiAgentResults').show();
+            
+            if (data.summary.ai_agents_detected) {
+                $('#aiAgentContent').html('<div class="alert alert-warning">' +
+                    '<strong>AI Security Agents Detected!</strong><br>' +
+                    data.summary.ai_agent_details + '</div>');
+                    
+                // Show bypass results if available
+                if (data.summary.ai_bypass_attempted) {
+                    $('#aiBypassContent').show();
+                    $('#aiBypassResult').text(data.summary.ai_bypass_result);
+                }
+            } else {
+                $('#aiAgentContent').html('<div class="alert alert-success">' +
+                    '<strong>No AI Security Agents Detected</strong></div>');
+            }
+        }
+    }
+    </script>
+</body>
+</html>
+
+<!-- In your vulnerability details section -->
+<div class="vulnerability-details" id="vulnerabilityDetails">
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">Vulnerability Details</h5>
+        </div>
+        <div class="card-body">
+            <div id="vulnerabilityContent">
+                <p>Select a vulnerability to view details</p>
+            </div>
+            
+            <!-- Add these sections for bypass and remediation -->
+            <div id="bypassTechniques" style="display: none;">
+                <h6 class="mt-4">Bypass Techniques:</h6>
+                <pre id="bypassContent" class="bg-light p-3 rounded"></pre>
+            </div>
+            
+            <div id="remediationSteps" style="display: none;">
+                <h6 class="mt-4">Remediation Steps:</h6>
+                <pre id="remediationContent" class="bg-light p-3 rounded"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Update your JavaScript to display the new information -->
+<script>
+function showVulnerabilityDetails(vulnerability) {
+    // ... existing code ...
+    
+    // Display bypass techniques if available
+    if (vulnerability.bypass_techniques) {
+        $('#bypassTechniques').show();
+        $('#bypassContent').text(vulnerability.bypass_techniques);
+    } else {
+        $('#bypassTechniques').hide();
+    }
+    
+    // Display remediation steps if available
+    if (vulnerability.remediation) {
+        $('#remediationSteps').show();
+        $('#remediationContent').text(vulnerability.remediation);
+    } else {
+        $('#remediationSteps').hide();
+    }
+}
+</script>
